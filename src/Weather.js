@@ -4,27 +4,16 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 export default function Weather() {
-  const [City, setCity] = useState("");
-
-  function HandleSubmit(event) {
-    event.preventDefault();
-  }
-
-  function DisplayCity(event) {
-    setCity(event.target.value);
-  }
-
   return (
     <div className="Wrapper">
       <div className="container">
-        <form onSubmit={HandleSubmit}>
+        <form>
           <div className="row">
             <div className="col-6 ms-4">
               <Form.Control
                 type="Search"
                 placeholder="Enter City..."
                 autoFocus
-                onChange={DisplayCity}
               />
             </div>
             <div className="col-2">
