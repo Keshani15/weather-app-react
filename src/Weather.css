@@ -1,9 +1,17 @@
+li {
+  list-style: none;
+}
+
+footer {
+  font-size: 12px;
+}
+
 .container {
   border: 1px solid grey;
   border-radius: 4px;
   padding: 25px;
 }
 
-li {
-  list-style: none;
+.Wrapper {
+  margin: 15px;
 }
