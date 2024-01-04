@@ -124,7 +124,7 @@ export default function Weather() {
         <a href="https://github.com/Keshani15/weather-app-react">
           Open source code,
         </a>{" "}
-        by Keshani Naidoo
+        by <a href="https://github.com/Keshani15">Keshani Naidoo</a>
       </footer>
     </div>
   );
