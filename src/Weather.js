@@ -33,14 +33,14 @@ export default function Weather() {
             <strong className="Temperature">14</strong>
             <span className="Units"> °C </span>
           </div>
-          <div className="col-6">
+          <div className="col-6 mt-4">
             <ul>
               <li>Precipitation: 82%</li>
               <li>Wind: 4km/h</li>
             </ul>
           </div>
         </div>
-        <div className="row ms-4">
+        <div className="row ms-4 Forecast">
           <div className="col-2">Fri </div>
           <div className="col-2">Sat </div>
           <div className="col-2">Sun </div>
@@ -49,7 +49,7 @@ export default function Weather() {
         </div>
         <div className="row ms-2">
           <div className="col-2">
-            <div className="Forecast-Image">
+            <div className="Forecast-Image ms-2">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Mostly Sunny"
@@ -58,7 +58,7 @@ export default function Weather() {
             </div>
           </div>
           <div className="col-2">
-            <div className="Forecast-Image">
+            <div className="Forecast-Image ms-4">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAepJREFUaN7tmd2thCAQhSnBEijBEmjgJpZgCZZgCZZgCXZwLcFX3yiBDlhIhhvC5dcdFzeB5LzsTtjz4cwwZomUknyzSANoAA2gATQANICSdZ4nA/Wk0ioGUGY7pVVJKElLXGl6NIAySMGojGh9MsCRMG80Pw5AmRozzRvppzVoGNCk068mwFYI4JPArpMSgB0BwGj5doAVutnsdDNdYwwVAH5o8rTNqzoyGsKIAqAvKETjRkNGQxC5BR8EuMm8vJCO0cKPAXBs83DyXcF9YmvKBoDHfIf5/o2DESUAM7L5HU6eez4fraFwzEwvYQo9BLDfcPrM2dek02jd1vZnOfuyEMCKaH52OwqMGaF04vBdDsQaApgQT546Jy9g/1gtcHgSqUxYQgD0xrwvgR9gn5D6WBtdEC6s6e55KQbQWd3hijqECVakxoq33okzXj03pFpiNQCOT4zfSYCf35MprUpHaBMrhltzlKwOoAx1SkJJgnqPeR3DrRhmXYZY6q8CLJaxP3NOzOzEjOSDKwigT9sxtnvM01RMTYDdMUc9AG5M/wgAnQaOsdljfnBiFlJh/QPwFK4u0C5RuMKNqQngFu7wtMJNAYhUUebE1ATYYoULAFvNwk0BmFuVZty8lFRe7S+mBtAAGkADeFsvKpKWeAy6FowAAAAASUVORK5CYII="
                 alt="Rain"
@@ -67,7 +67,7 @@ export default function Weather() {
             </div>
           </div>
           <div className="col-2">
-            <div className="Forecast-Image">
+            <div className="Forecast-Image ms-4 ps-2">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
                 alt="Mostly Raining"
@@ -76,7 +76,7 @@ export default function Weather() {
             </div>
           </div>
           <div className="col-2">
-            <div className="Forecast-Image">
+            <div className="Forecast-Image ms-5">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAepJREFUaN7tmd2thCAQhSnBEijBEmjgJpZgCZZgCZZgCXZwLcFX3yiBDlhIhhvC5dcdFzeB5LzsTtjz4cwwZomUknyzSANoAA2gATQANICSdZ4nA/Wk0ioGUGY7pVVJKElLXGl6NIAySMGojGh9MsCRMG80Pw5AmRozzRvppzVoGNCk068mwFYI4JPArpMSgB0BwGj5doAVutnsdDNdYwwVAH5o8rTNqzoyGsKIAqAvKETjRkNGQxC5BR8EuMm8vJCO0cKPAXBs83DyXcF9YmvKBoDHfIf5/o2DESUAM7L5HU6eez4fraFwzEwvYQo9BLDfcPrM2dek02jd1vZnOfuyEMCKaH52OwqMGaF04vBdDsQaApgQT546Jy9g/1gtcHgSqUxYQgD0xrwvgR9gn5D6WBtdEC6s6e55KQbQWd3hijqECVakxoq33okzXj03pFpiNQCOT4zfSYCf35MprUpHaBMrhltzlKwOoAx1SkJJgnqPeR3DrRhmXYZY6q8CLJaxP3NOzOzEjOSDKwigT9sxtnvM01RMTYDdMUc9AG5M/wgAnQaOsdljfnBiFlJh/QPwFK4u0C5RuMKNqQngFu7wtMJNAYhUUebE1ATYYoULAFvNwk0BmFuVZty8lFRe7S+mBtAAGkADeFsvKpKWeAy6FowAAAAASUVORK5CYII="
                 alt="Rain"
@@ -85,7 +85,7 @@ export default function Weather() {
             </div>
           </div>
           <div className="col-2">
-            <div className="Forecast-Image">
+            <div className="Forecast-Image ms-5">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Mostly Sunny"
@@ -94,7 +94,7 @@ export default function Weather() {
             </div>
           </div>
         </div>
-        <div className="row ms-4">
+        <div className="row ms-4 Forecast">
           <div className="col-2">
             <div>15°C</div>
           </div>
