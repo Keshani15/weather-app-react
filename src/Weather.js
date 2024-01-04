@@ -120,7 +120,7 @@ export default function Weather() {
           </div>
         </div>
       </div>
-      <footer className="ms-5 ps-5">
+      <footer className="ms-2">
         <a href="https://github.com/Keshani15/weather-app-react">
           Open source code,
         </a>{" "}
