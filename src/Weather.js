@@ -1,23 +1,42 @@
 import "./Weather.css";
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 export default function Weather() {
+  const [City, setCity] = useState("");
+
+  function HandleSubmit(event) {
+    event.preventDefault();
+  }
+
+  function DisplayCity(event) {
+    setCity(event.target.value);
+  }
+
   return (
     <div className="Wrapper">
       <div className="container">
-        <div className="row">
-          <div className="col-6 ms-4">
-            <Form.Control type="Search" placeholder="Enter City..." autoFocus />
+        <form onSubmit={HandleSubmit}>
+          <div className="row">
+            <div className="col-6 ms-4">
+              <Form.Control
+                type="Search"
+                placeholder="Enter City..."
+                autoFocus
+                onChange={DisplayCity}
+              />
+            </div>
+            <div className="col-2">
+              <Button type="Submit" variant="primary">
+                Search
+              </Button>
+            </div>
+            <div className="col-2">
+              <Button variant="success">Current</Button>
+            </div>
           </div>
-          <div className="col-2">
-            <Button variant="primary">Search</Button>
-          </div>
-          <div className="col-2">
-            <Button variant="success">Current</Button>
-          </div>
-        </div>
+        </form>
         <h2 className="Display-City ms-4 mt-2">Johannesburg</h2>
         <ul className="Day-Time">
           <li>Thursday 15:38</li>
@@ -30,7 +49,7 @@ export default function Weather() {
               alt="Mostly Sunny"
               id="icon"
             />
-            <strong className="Temperature">14</strong>
+            <strong className="Temperature">24</strong>
             <span className="Units"> °C </span>
           </div>
           <div className="col-6 mt-4">
@@ -96,19 +115,19 @@ export default function Weather() {
         </div>
         <div className="row ms-4 Forecast">
           <div className="col-2">
-            <div>15°C</div>
+            <div>23°</div>
           </div>
           <div className="col-2">
-            <div>15°C</div>
+            <div>15°</div>
           </div>
           <div className="col-2">
-            <div>15°C</div>
+            <div>12°</div>
           </div>
           <div className="col-2">
-            <div>15°C</div>
+            <div>15°</div>
           </div>
           <div className="col-2">
-            <div>15°C</div>
+            <div>20°</div>
           </div>
         </div>
       </div>
